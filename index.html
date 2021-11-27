@@ -184,7 +184,7 @@
       &nbsp;&nbsp;
       <a class="header_bar" href="#About">About</a>
       &nbsp;&nbsp; | &nbsp;&nbsp;
-      <a class="header_bar" href="#Experience">Experience</a>
+      <a class="header_bar" href="#Research">Experience</a>
       &nbsp;&nbsp; | &nbsp;&nbsp;
       <a class="header_bar" href="#Academics">Academics</a>
       &nbsp;&nbsp; | &nbsp;&nbsp;
@@ -210,7 +210,7 @@
               margin-right: 10px;
             "
             alt="Parth Sharma"
-            src="parth.jpg"
+            src="parth-github2.jpg"
             id="personal"
           />
         </td>
@@ -229,9 +229,9 @@
           </h4> -->
           <p>
             I am final year post graduate student pursuing M.Tech in 
-            <a href="https://www.cse.iitk.ac.in/">Computer Science and Engineering</a>
+            <a href="https://www.cse.iitk.ac.in/" target="_blank">Computer Science and Engineering</a>
             from Indian Institute of Technology, Kanpur. Currently, I am doing my thesis under the 
-            supervision of Prof. Swarnendu Biswas. We are working on Scoped Races in GPU programs.
+            supervision of Prof. Swarnendu Biswas. We are working on detecting Concurrency bugs and Scoped Races in GPU programs.
           </p>
         </td>
       </tr>
@@ -252,12 +252,32 @@
       </ul>
     -->
     <hr />
+    <h3 style="font-size: 180%"><a id="Research">RESEARCH EXPERIENCE</a></h3>
+    <ul>    
+      <li>
+        <b>Efficient Dynamic Data Race Detection for GPUs</b> [ <i>Master Thesis</i> ]
+        <br>
+        <a href="https://www.cse.iitk.ac.in/users/swarnendu/" target="_blank"> Supervisor : Prof. Swarnendu Biswas</a>
+        <p>
+          Prior software-only work does not detect scoped synchronization and is not predictive in nature. Hardware techniques
+          account for scoped synchronization and tries to be predictive using lockset analysis, but reports both false positives and
+          false negatives.
+          <br>
+          Recently, there has been a spurt of work on predictive data race detection in the context of CPU programs. We explore
+          predictive race detection for GPUs to improve the effectiveness and coverage of dynamic analysis.
+          <br>
+          We are trying to come up with an efficient dynamic data race detection analysis for GPU kernels which accounts for barrier
+          and scoped synchronization.
+        </p>
+      </li>
+    </ul>
 
-    <h3 style="font-size: 130%"><a id="Academics">Academics</a></h3>
+    <hr />
+    <h3 style="font-size: 180%"><a id="Academics">ACADEMICS</a></h3>
 
     <ul>
     <li>
-      <b><a href="http://www.iitk.ac.in/" target="_blank" style="text-decoration: none">Indian Institute of Technology, Kanpur</a></b> <br><br>
+      <b><a href="http://www.iitk.ac.in/" target="_blank" style="text-decoration: none;font-size: 150%">Indian Institute of Technology, Kanpur</a></b> <br><br>
       M.Tech in Computer Science and Engineering 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( <em>2020-Present</em> )
 
@@ -276,7 +296,7 @@
           <td>CS641 Modern Cryptology</td>
           <td>CS711 Introduction to Machine Learning</td>
         </tr>
-  
+        
         <tr class="border_bottom">
           <td>CS738 Advanced Compiler Optimization</td>
         </tr>
@@ -286,7 +306,7 @@
     </li>
 <br><br><br>
     <li>
-      <b><a href="https://www.ietdavv.edu.in/" target="_blank" style="text-decoration: none">Institute of Engineering and Technology - DAVV, Indore </a></b><br><br>
+      <b><a href="https://www.ietdavv.edu.in/" target="_blank" style="text-decoration: none;font-size: 150%">Institute of Engineering and Technology - DAVV, Indore </a></b><br><br>
       B.E. in Information Technology 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( <em>2016-2020</em> )
     </li>
@@ -294,23 +314,58 @@
 
     <hr />
 
-    <h3 style="font-size: 130%"><a id="Projects">Projects</a></h3>
+    <h3 style="font-size: 180%"><a id="Projects">PROJECTS</a></h3>
+    <ul>
+      <li>
+        <b><a href="">Simulation of multi-core cache hierarchy</a></b> [ <i><a href="https://www.cse.iitk.ac.in/users/mainakc/" target="_blank">Prof. Mainak Chauduri</a></i> ]
+        <br><br>
+        Developed a Simulator to model a multi-core cache hierarchy supporting directory-based cache coherence and reported
+        simulated cycles, L1 cache accesses and misses, L2 cache misses based on given machine access traces.
+      </li>
+      <li>
+        <b><a href="">Halo exchange with neighbouring processes</a></b> [ <i><a href="https://www.cse.iitk.ac.in/users/pmalakar/" target="_blank">Prof. Preeti Malakar</a></i> ]
+        <br><br>
+        Performed computation and communication between MPI processes for different set of configurations.
+        <br>
+        Analyzed the performance of data exchange using different methods such as multiple MPI Sends, MPI Pack/Unpack and MPI derived datatypes using MPICH library.
+      </li>
+      <li>
+        <b><a href="">CUDA kernel for matrix multiplication</a></b> [ <i><a href="https://www.cse.iitk.ac.in/users/swarnendu/" target="_blank">Prof. Swarnendu Biswas</a></i> ]
+        <br><br>
+        Implemented both optimized and naive [O(n^3)] versions of CUDA kernel for square matrix multiplication.
+      </li>
+      <li>
+        <b><a href="">Exploration of Cache Inclusive, NINE and Exclusive policies</a></b> [ <i><a href="https://www.cse.iitk.ac.in/users/mainakc/" target="_blank">Prof. Mainak Chauduri</a></i> ]
+        <br><br>
+        Simulated a two-level cache hierarchy. Examined L2, L3 cache misses for cache Inclusive, NINE and Exclusive policies.
+        <br>
+        Performed classification of the L3 misses in the case of an inclusive fully associative L3 cache into Cold, Conflict, and
+        Capacity misses using LRU and Belady’s optimal policies.
+      </li>
+      <li>
+        <b><a href="">Optimization of MPI Blocking Collectives</a></b> [ <i><a href="https://www.cse.iitk.ac.in/users/pmalakar/" target="_blank">Prof. Preeti Malakar</a></i> ]
+        <br><br>
+        Performed different optimizations on MPI Blocking Collectives, such as MPI Bcast, MPI Reduce, MPI Gather, based on
+        the current system state, knowledge of multicore and network topology of the csews cluster of IITK CSE Dept.
+      </li>
+      <li>
+        <b><a href="">Escaping the caves - Decrypting the Ciphers</a></b> [ <i><a href="https://sites.google.com/view/manindra/home" target="_blank">Prof. Manindra Agrawal</a></i> ]
+        <br><br>
+        Applied cryptanalysis techniques on various Cryptosystems viz. Playfair, Substitution, 6-round DES, EAEAE, and RSA.
+      </li>
+    </ul>
 
     <hr />
 
-    <h3 style="font-size: 130%"><a id="Contact">Contact</a></h3>
-    <i class="fa fa-envelope"> prthshrma20@iitk.ac.in , prthshrma@cse.iitk.ac.in</i>
-    <br>
-    <i class="fa fa-linkedin-square" style="font-size:18px">
-    <a href="https://www.linkedin.com/in/parth-sharma-6b6604184"> linkedin.com/parth-sharma </a>
-    </i>
-    <br>
-    <i class="fa fa-github" style="font-size:18px">
-    <a href="https://github.com/prthshrma">github.com/prthshrma</a>
-    </i>
-    <hr />
-
-    
+    <h3 style="font-size: 180%"><a id="Contact">CONTACT</a></h3>
+    <div style="width:1000px; margin:0 auto;">
+      <ul>
+        <a href="mailto:prthshrma20@iitk.ac.in"><i class="fa fa-envelope" aria-hidden="true"> prthshrma20@iitk.ac.in</i> </a> 
+        <a href="mailto:prthshrma@cse.iitk.ac.in"><i class="fa fa-envelope-square" aria-hidden="true"> prthshrma@cse.iitk.ac.in</i></a>
+        <a href="https://github.com/prthshrma" target="_blank"><i class="fa fa-github-square" aria-hidden="true"> github.com/prthshrma</i></a>
+        <a href="https://www.linkedin.com/in/parth-sharma-6b6604184" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"> linkedin.com/parth-sharma</i></a>
+      </ul>
+    </div>
 
     <div class="Update" style="text-align: center">
       <div style="text-align: center">
